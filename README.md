@@ -94,4 +94,4 @@ This project is licensed under the **GNU General Public License v3.0**. Under th
 *   🔮 **Volmit Software** — The incredible original Iris engine.
 
 ---
-<p align="center">Made with ❤️ for the KRUD SMP Community</p>
+<p align="center">Made with ❤️ by <b>Krud Studio</b> for the KRUD SMP Community</p>
