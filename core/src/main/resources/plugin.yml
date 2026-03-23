@@ -1,11 +1,36 @@
-name: ${name}
-version: ${version}
-main: ${main}
-load: STARTUP
-authors: [ cyberpwn, NextdoorPsycho, Vatuu ]
-website: volmit.com
-description: More than a Dimension!
+# ============================================
+# KRUD World — World Generator
+# Based on Iris by VolmitSoftware (GPL-3.0)
+# Original: https://github.com/VolmitSoftware/Iris
+# ============================================
+
+name: KRUD-World
+version: 1.0.0-KRUD
+main: dev.krud.world.KrudWorld
+authors:
+  - Krud Studio
+  - VolmitSoftware (original Iris)
+description: |
+  KRUD World Generator — Krud Studio Khmer
+  Based on Iris (GPL-3.0)
+  Original: github.com/VolmitSoftware/Iris
+api-version: '1.21'
+website: https://github.com/KrudStudio/KRUD-World
+
 commands:
-  iris:
-    aliases: [ ir, irs ]
-api-version: '${apiVersion}'
+  kworld:
+    description: KRUD World main command
+    usage: /kworld [create|delete|list|reload|pregen|studio]
+    permission: kworld.admin
+    aliases: [kw, iris]
+
+permissions:
+  kworld.admin:
+    description: Full KRUD World admin access
+    default: op
+  kworld.bypass:
+    description: Bypass world restrictions
+    default: false
+  kworld.studio:
+    description: Access KRUD World Studio editor
+    default: op

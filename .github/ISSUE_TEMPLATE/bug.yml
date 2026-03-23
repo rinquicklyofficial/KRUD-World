@@ -1,19 +1,19 @@
-name: Iris Bug Report
-description: File a bug report for Iris
+name: KrudWorld Bug Report
+description: File a bug report for KrudWorld
 labels: [ bug ]
 body:
   - type: markdown
     attributes:
       value: |
         Thank you for taking the time to fill this out!
-        If this does not work for you, feel free to use the [blank](https://github.com/VolmitSoftware/Iris/issues/new) format.
+        If this does not work for you, feel free to use the [blank](https://github.com/VolmitSoftware/KrudWorld/issues/new) format.
   - type: textarea
     id: how
     attributes:
       label: Problem
       description: Please give a text description of how you reached the problem
       value: |
-        1. Install Iris...
+        1. Install KrudWorld...
         2. Do this...
         3. Do that...
         4. Observe the error...
@@ -48,8 +48,8 @@ body:
   - type: input
     id: irisversion
     attributes:
-      label: Iris Version
-      description: What version of Iris are you running? (see console)
+      label: KrudWorld Version
+      description: What version of KrudWorld are you running? (see console)
       placeholder: DO NOT SAY "LATEST"
     validations:
       required: true

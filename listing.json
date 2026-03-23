@@ -1,10 +1,10 @@
 [
-  "overworld IrisDimensions/overworld",
-  "vanilla IrisDimensions/vanilla",
-  "flat IrisDimensions/flat",
-  "redstone IrisDimensions/redstone",
-  "mars IrisDimensions/mars",
-  "example IrisDimensions/example",
-  "newhorizons IrisDimensions/newhorizons",
-  "theend IrisDimensions/theend"
+  "overworld KrudWorldDimensions/overworld",
+  "vanilla KrudWorldDimensions/vanilla",
+  "flat KrudWorldDimensions/flat",
+  "redstone KrudWorldDimensions/redstone",
+  "mars KrudWorldDimensions/mars",
+  "example KrudWorldDimensions/example",
+  "newhorizons KrudWorldDimensions/newhorizons",
+  "theend KrudWorldDimensions/theend"
 ]

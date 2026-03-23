@@ -6,7 +6,7 @@ import org.jetbrains.kotlin.gradle.dsl.JvmTarget
 import java.net.URI
 
 /*
- * Iris is a World Generator for Minecraft Bukkit Servers
+ * KrudWorld is a World Generator for Minecraft Bukkit Servers
  * Copyright (c) 2021 Arcane Arts (Volmit Software)
  *
  * This program is free software: you can redistribute it and/or modify
@@ -35,8 +35,8 @@ plugins {
 }
 
 val apiVersion = "1.19"
-val main = "com.volmit.iris.Iris"
-val lib = "com.volmit.iris.util"
+val main = "dev.krud.world.KrudWorld"
+val lib = "dev.krud.world.util"
 
 /**
  * Dependencies.
@@ -132,7 +132,7 @@ sentry {
     includeSourceContext = true
 
     org = "sentry"
-    projectName = "iris"
+    projectName = "krudworld"
     authToken = findProperty("sentry.auth.token") as String? ?: System.getenv("SENTRY_AUTH_TOKEN")
 }
 
@@ -214,7 +214,7 @@ val generateTemplates = tasks.register<Copy>("generateTemplates") {
 
     from(templateSource)
     into(templateDest)
-    rename { "com/volmit/iris/$it" }
+    rename { "dev/krud/world/$it" }
     expand(inputs.properties)
 }
 

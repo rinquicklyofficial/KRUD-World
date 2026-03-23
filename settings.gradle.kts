@@ -1,5 +1,5 @@
 /*
- * Iris is a World Generator for Minecraft Bukkit Servers
+ * KrudWorld is a World Generator for Minecraft Bukkit Servers
  * Copyright (c) 2021 Arcane Arts (Volmit Software)
  *
  * This program is free software: you can redistribute it and/or modify
@@ -19,7 +19,7 @@ plugins {
     id ("org.gradle.toolchains.foojay-resolver-convention") version "1.0.0"
 }
 
-rootProject.name = "Iris"
+rootProject.name = "KRUD-World"
 
 include(":core", ":core:agent")
 include(

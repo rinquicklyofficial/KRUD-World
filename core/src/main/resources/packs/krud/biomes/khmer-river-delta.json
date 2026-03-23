@@ -1,0 +1,9 @@
+{
+  "name": "khmer-river-delta",
+  "vanillaBiome": "RIVER",
+  "surface": {
+    "top": "GRAVEL",
+    "middle": "CLAY",
+    "under": "STONE"
+  }
+}

@@ -4,7 +4,7 @@ import xyz.jpenilla.runpaper.task.RunServer
 import kotlin.system.exitProcess
 
 /*
- * Iris is a World Generator for Minecraft Bukkit Servers
+ * KrudWorld is a World Generator for Minecraft Bukkit Servers
  * Copyright (c) 2021 Arcane Arts (Volmit Software)
  *
  * This program is free software: you can redistribute it and/or modify
@@ -33,8 +33,9 @@ plugins {
     alias(libs.plugins.runPaper)
 }
 
-group = "com.volmit"
-version = "3.9.1-1.20.1-1.21.11"
+group = "dev.krud.world"
+version = "1.0.0-KRUD"
+description = "KRUD World — Based on KrudWorld (GPL-3.0)"
 
 apply<ApiGenerator>()
 
@@ -47,8 +48,8 @@ registerCustomOutputTask("Coco", "D://mcsm/plugins")
 registerCustomOutputTask("Strange", "D://Servers/1.17 Test Server/plugins")
 registerCustomOutputTask("Vatuu", "D://Minecraft/Servers/1.19.4/plugins")
 registerCustomOutputTask("CrazyDev22", "C://Users/Julian/Desktop/server/plugins")
-registerCustomOutputTask("PixelFury", "C://Users/repix/workplace/Iris/1.21.3 - Development-Public-v3/plugins")
-registerCustomOutputTask("PixelFuryDev", "C://Users/repix/workplace/Iris/1.21 - Development-v3/plugins")
+registerCustomOutputTask("PixelFury", "C://Users/repix/workplace/KrudWorld/1.21.3 - Development-Public-v3/plugins")
+registerCustomOutputTask("PixelFuryDev", "C://Users/repix/workplace/KrudWorld/1.21 - Development-v3/plugins")
 // ========================== UNIX ==============================
 registerCustomOutputTaskUnix("CyberpwnLT", "/Users/danielmills/development/server/plugins")
 registerCustomOutputTaskUnix("PsychoLT", "/Users/brianfopiano/Developer/RemoteGit/[Minecraft Server]/plugins")
@@ -126,20 +127,20 @@ tasks {
         inputs.files(included)
         duplicatesStrategy = DuplicatesStrategy.EXCLUDE
         from(jarJar, provider { included.resolve().map(::zipTree) })
-        archiveFileName.set("Iris-${project.version}.jar")
+        archiveFileName.set("KrudWorld-${project.version}.jar")
     }
 
-    register<Copy>("iris") {
-        group = "iris"
+    register<Copy>("krudworld") {
+        group = "krudworld"
         dependsOn("jar")
-        from(layout.buildDirectory.file("libs/Iris-${project.version}.jar"))
+        from(layout.buildDirectory.file("libs/KrudWorld-${project.version}.jar"))
         into(layout.buildDirectory)
     }
 
-    register<Copy>("irisDev") {
-        group = "iris"
+    register<Copy>("krudworldDev") {
+        group = "krudworld"
         from(project(":core").layout.buildDirectory.files("libs/core-javadoc.jar", "libs/core-sources.jar"))
-        rename { it.replace("core", "Iris-${project.version}") }
+        rename { it.replace("core", "KrudWorld-${project.version}") }
         into(layout.buildDirectory)
         dependsOn(":core:sourcesJar")
         dependsOn(":core:javadocJar")
@@ -163,7 +164,7 @@ tasks {
             val url = "http://sentry.volmit.com:8080"
             val authToken = project.findProperty("sentry.auth.token") ?: System.getenv("SENTRY_AUTH_TOKEN")
             val org = "sentry"
-            val projectName = "iris"
+            val projectName = "krudworld"
             exec(cli, "--url", url , "--auth-token", authToken, "releases", "new", "-o", org, "-p", projectName, version)
             exec(cli, "--url", url , "--auth-token", authToken, "releases", "set-commits", "-o", org, "-p", projectName, version, "--auto", "--ignore-missing")
             //exec(cli, "--url", url, "--auth-token", authToken, "releases", "finalize", "-o", org, "-p", projectName, version)
@@ -268,10 +269,10 @@ fun registerCustomOutputTask(name: String, path: String) {
     tasks.register<Copy>("build$name") {
         group = "development"
         outputs.upToDateWhen { false }
-        dependsOn("iris")
-        from(layout.buildDirectory.file("Iris-${project.version}.jar"))
+        dependsOn("krudworld")
+        from(layout.buildDirectory.file("KrudWorld-${project.version}.jar"))
         into(file(path))
-        rename { "Iris.jar" }
+        rename { "KrudWorld.jar" }
     }
 }
 
@@ -283,9 +284,9 @@ fun registerCustomOutputTaskUnix(name: String, path: String) {
     tasks.register<Copy>("build$name") {
         group = "development"
         outputs.upToDateWhen { false }
-        dependsOn("iris")
-        from(layout.buildDirectory.file("Iris-${project.version}.jar"))
+        dependsOn("krudworld")
+        from(layout.buildDirectory.file("KrudWorld-${project.version}.jar"))
         into(file(path))
-        rename { "Iris.jar" }
+        rename { "KrudWorld.jar" }
     }
 }

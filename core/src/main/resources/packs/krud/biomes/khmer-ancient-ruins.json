@@ -1,0 +1,9 @@
+{
+  "name": "khmer-ancient-ruins",
+  "vanillaBiome": "JUNGLE",
+  "surface": {
+    "top": "MOSSY_COBBLESTONE",
+    "middle": "MOSSY_STONE_BRICKS",
+    "under": "STONE_BRICKS"
+  }
+}

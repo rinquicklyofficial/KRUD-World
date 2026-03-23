@@ -1,0 +1,14 @@
+{
+  "name": "khmer-jungle",
+  "vanillaBiome": "JUNGLE",
+  "objects": ["jungle-tree-large", "bamboo-cluster"],
+  "surface": {
+    "top": "GRASS_BLOCK",
+    "middle": "RED_SANDSTONE",
+    "under": "SANDSTONE"
+  },
+  "deposits": [
+    {"material": "GOLD_ORE", "size": 8, "rarity": 12},
+    {"material": "EMERALD_ORE", "size": 3, "rarity": 8}
+  ]
+}

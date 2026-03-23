@@ -1,0 +1,43 @@
+KRUD World
+Copyright (C) 2026 Krud Studio
+https://github.com/KrudStudio/KRUD-World
+
+============================================
+ORIGINAL PROJECT ATTRIBUTION (REQUIRED)
+============================================
+
+This software is based on Iris World Generator:
+  VolmitSoftware/Iris
+  Copyright (c) 2021 Arcane Arts (Volmit Software)
+  https://github.com/VolmitSoftware/Iris
+  License: GNU General Public License v3.0
+
+============================================
+CHANGES MADE FROM ORIGINAL
+============================================
+
+1. Renamed plugin from Iris to KRUD World
+2. Changed package from com.volmit.iris to dev.krud.world
+3. Changed author to Krud Studio
+4. Added Khmer Kingdom dimension (khmer-kingdom)
+5. Added DonutSMP style messages
+6. Added Asia/Phnom_Penh timezone support
+7. Added KRUD branded config format
+8. Added custom startup banner
+
+============================================
+GNU GENERAL PUBLIC LICENSE
+Version 3, 29 June 2007
+============================================
+
+This program is free software: you can
+redistribute it and/or modify it under the
+terms of the GNU General Public License as
+published by the Free Software Foundation,
+either version 3 of the License, or (at your
+option) any later version.
+
+This program is distributed in the hope that
+it will be useful, but WITHOUT ANY WARRANTY;
+See the GNU General Public License for more
+details: https://www.gnu.org/licenses/

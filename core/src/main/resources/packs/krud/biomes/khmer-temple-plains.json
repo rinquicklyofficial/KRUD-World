@@ -1,0 +1,9 @@
+{
+  "name": "khmer-temple-plains",
+  "vanillaBiome": "SAVANNA",
+  "surface": {
+    "top": "GRASS_BLOCK",
+    "middle": "SANDSTONE",
+    "under": "STONE"
+  }
+}

@@ -1,12 +1,12 @@
-name: Iris Feature Request
-description: File a feature request for Iris. If you want to report a bug this is not the place.
+name: KrudWorld Feature Request
+description: File a feature request for KrudWorld. If you want to report a bug this is not the place.
 labels: [ feature ]
 body:
   - type: markdown
     attributes:
       value: |
         Thank you for taking the time to fill this out!
-        If this does not work for you, feel free to use the [blank](https://github.com/VolmitSoftware/Iris/issues/new) format.
+        If this does not work for you, feel free to use the [blank](https://github.com/VolmitSoftware/KrudWorld/issues/new) format.
   - type: dropdown
     id: arc
     attributes:

@@ -1,0 +1,56 @@
+{
+  "name": "khmer-kingdom",
+  "author": "Krud Studio",
+  "description": "Ancient Khmer Kingdom — Krud Studio",
+  "version": 1,
+
+  "fluid": {
+    "fluidType": "WATER",
+    "height": 62
+  },
+
+  "ceiling": {
+    "enabled": false
+  },
+
+  "focus": "",
+  "caveBiomes": true,
+
+  "regions": [
+    "khmer-jungle",
+    "khmer-temple-plains",
+    "khmer-river-delta",
+    "khmer-mountain",
+    "khmer-ancient-ruins"
+  ],
+
+  "features": [
+    {
+      "feature": "khmer-temple-angkor",
+      "rarity": 150
+    },
+    {
+      "feature": "khmer-temple-small",
+      "rarity": 50
+    },
+    {
+      "feature": "khmer-river",
+      "rarity": 20
+    },
+    {
+      "feature": "khmer-ruins",
+      "rarity": 80
+    }
+  ],
+
+  "noise": [
+    {
+      "name": "khmer-base-terrain",
+      "generator": "SIMPLEX_FRACTAL",
+      "octaves": 5,
+      "gain": 0.5,
+      "lacunarity": 2.1,
+      "zoom": 150
+    }
+  ]
+}
