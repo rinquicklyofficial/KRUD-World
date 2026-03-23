@@ -33,6 +33,29 @@ Explore a variety of unique worlds out of the box:
 
 ---
 
+## 🎮 Commands & Permissions
+
+### Base Command: `/kworld` (Aliases: `/kw`, `/iris`)
+The main administrative command for managing your worlds.
+
+| Command | Description | Permission |
+|:--- |:--- |:--- |
+| `/kworld create <name> [dimension] [seed] [main]` | Create a new world using a specific dimension. | `kworld.admin` |
+| `/kworld tp <world> [player]` | Teleport yourself or another player to a world. | `kworld.admin` |
+| `/kworld list` | List all available KrudWorld dimensions. | `kworld.admin` |
+| `/kworld pregen <radius> [world] [center] [gui]` | Start world pregeneration for better performance. | `kworld.admin` |
+| `/kworld pregen stop` | Stop the active pregeneration task. | `kworld.admin` |
+| `/kworld pregen pause` | Pause or resume the active pregeneration task. | `kworld.admin` |
+| `/kworld studio` | Open the KrudWorld Studio editor. | `kworld.studio` |
+| `/kworld version` | Display the current plugin version. | `kworld.admin` |
+
+### Permissions Summary
+*   🔑 **`kworld.admin`**: Full administrative access (Defaults to OP).
+*   🛠️ **`kworld.studio`**: Access to the Studio world editor (Defaults to OP).
+*   🚀 **`kworld.bypass`**: Bypass specific world generation restrictions.
+
+---
+
 ## 🛠️ Build & Installation
 
 ### Requirements
