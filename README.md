@@ -1,42 +1,74 @@
-# KRUD World
+# 🌍 KRUD World
+### ✨ A High-Performance Minecraft World Generator ✨
 
-A Minecraft world generator for KRUD SMP by Krud Studio.
+[![License](https://img.shields.io/badge/License-GPL--3.0-blue.svg)](LICENSE)
+[![Platform](https://img.shields.io/badge/Platform-Paper%20%7C%20Spigot-green.svg)](https://papermc.io)
+[![Java](https://img.shields.io/badge/Java-21-orange.svg)](https://www.oracle.com/java/technologies/javase/jdk21-archive-downloads.html)
 
-## Features
+**KRUD World** is a powerful, feature-rich world generator for Minecraft servers, specifically designed for the **KRUD SMP**. Based on the robust **Iris World Generator** engine, it brings unparalleled performance and breathtaking aesthetics to your server's terrain.
 
-- All original Iris world generation features
-- Custom Khmer Kingdom dimension
-- DonutSMP style messages
+---
 
-## Attribution (Required by GPL-3.0)
+## 🚀 Key Features
 
-This project is based on **Iris World Generator**:
-- Original project: https://github.com/VolmitSoftware/Iris
-- Original author: Arcane Arts (Volmit Software)
-- Original license: GPL-3.0
+*   🏙️ **Custom Dimensions:** Explore the legendary **Khmer Kingdom**, a unique dimension crafted for KRUD SMP.
+*   ⚡ **Performance-First:** Built on the Iris engine, providing industry-leading world generation speed.
+*   📦 **Cross-Version Support:** Compatible with Minecraft versions **1.20.1** all the way to **1.21.1**.
+*   🔔 **DonutSMP Style Alerts:** Branded messaging system for a modern server feel.
+*   🎨 **Full Customization:** Branded KRUD configuration and specialized commands.
+*   🌏 **Global Support:** Native support for the `Asia/Phnom_Penh` timezone.
 
-## Changes from Iris
+---
 
-1. Renamed to KRUD World (author: Krud Studio)
-2. Package renamed: com.volmit.iris → dev.krud.world
-3. Added Khmer Kingdom custom dimension
-4. DonutSMP style alert messages
-5. Asia/Phnom_Penh timezone support
-6. KRUD branded config + commands
+## 🗺️ Included Dimensions
 
-## License
+Explore a variety of unique worlds out of the box:
+*   🏞️ **Overworld**
+*   ⚪ **Vanilla**
+*   📏 **Flat**
+*   🔴 **Redstone**
+*   ☄️ **Mars**
+*   ✨ **New Horizons**
+*   🌑 **The End**
 
-GPL-3.0 — See LICENSE file.
-This fork must remain open source.
+---
 
-## Build
+## 🛠️ Build & Installation
 
+### Requirements
+*   **Java 21** or newer.
+*   **Gradle** (Bundled via `gradlew`).
+
+### Building from Source
 ```bash
-git clone https://github.com/KrudStudio/KRUD-World
+# Clone the repository
+git clone https://github.com/KrudStudio/KRUD-World.git
+
+# Enter the directory
 cd KRUD-World
+
+# Build the project
 ./gradlew build
 ```
+The compiled `.jar` file will be located in `build/libs/`.
 
-## Credits
-*   **Krud Studio** — KRUD modifications + Khmer Kingdom
-*   **VolmitSoftware** — Original Iris project
+---
+
+## 📜 Attribution & Licensing
+
+This project is a fork of the **Iris World Generator** by **Volmit Software** (Arcane Arts).
+
+*   **Original Project:** [Iris on GitHub](https://github.com/VolmitSoftware/Iris)
+*   **Original License:** GPL-3.0
+*   **Modified by:** Krud Studio
+
+This project is licensed under the **GNU General Public License v3.0**. Under the terms of this license, this fork and any derivatives **must remain open source**.
+
+---
+
+## 🙌 Credits
+*   🛡️ **Krud Studio** — KRUD modifications, branding, and Khmer Kingdom dimension.
+*   🔮 **Volmit Software** — The incredible original Iris engine.
+
+---
+<p align="center">Made with ❤️ for the KRUD SMP Community</p>
